@@ -1,0 +1,19 @@
+{
+  "name": "tool-kit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wangly19/tool-kit.git",
+  "author": "wangly19 <18607948581@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.4",
+    "eslint-plugin-jest": "^23.18.0",
+    "jest": "^26.1.0",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.6"
+  }
+}

@@ -1,0 +1,8 @@
+# dist打包后的文件
+dist/
+
+# node依赖模块
+node_modules/
+
+# yarn日志
+yarn-error.log
