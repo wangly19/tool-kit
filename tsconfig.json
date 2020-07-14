@@ -6,7 +6,7 @@
     "module": "commonjs",
     "removeComments": true,
     "declaration": true,
-    "declarationDir": "./dist/type",
+    "declarationDir": "./dist/@types",
     "sourceMap": false,
     "diagnostics": true,
     /* 打包配置 */
