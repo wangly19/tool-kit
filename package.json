@@ -5,8 +5,12 @@
   "repository": "https://github.com/wangly19/tool-kit.git",
   "author": "wangly19 <18607948581@163.com>",
   "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "typings": "dist/types/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build:tsc": "tsc",
+    "build": "gulp",
     "test": "jest"
   },
   "devDependencies": {
@@ -15,5 +19,16 @@
     "jest": "^26.1.0",
     "ts-jest": "^26.1.1",
     "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "rollup": "^2.21.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-sourcemaps": "^0.6.2",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "rollup-plugin-uglify": "^6.0.4"
   }
 }

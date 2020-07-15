@@ -5,4 +5,4 @@ dist/
 node_modules/
 
 # yarn日志
-yarn-error.log
+yarn-error.log  
