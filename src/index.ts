@@ -1,0 +1,1 @@
+export { MoneyGap } from './core/base';

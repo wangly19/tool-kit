@@ -1,6 +1,7 @@
 {
-  "name": "tool-kit",
-  "version": "1.0.0",
+  "name": "@wangly19/tool-kit",
+  "version": "1.0.2",
+  "private": false,
   "main": "index.js",
   "repository": "https://github.com/wangly19/tool-kit.git",
   "author": "wangly19 <18607948581@163.com>",
@@ -8,6 +9,11 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "typings": "dist/types/index.d.ts",
+  "keywords": [
+    "typescript",
+    "util",
+    "tools"
+  ],
   "scripts": {
     "build:tsc": "tsc",
     "build": "gulp",
