@@ -1,4 +1,9 @@
-export { moneyGap, once } from './core/base';
+export {
+  moneyGap,
+  once,
+  numberOmit
+} from './core/base';
+
 export { 
   inspectIdenCard,
   inspectPhone,
