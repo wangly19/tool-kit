@@ -3,12 +3,20 @@
  */
 
 import {
-  moneyGap
+  moneyGap,
+  fors
 } from '../src/core/base';
 
 describe('base库测试集合', () => {
   test('金额增加逗号分界', () => {
     expect(moneyGap('10000')).toBe('10,000');
+  });
+  test('测试循环', () => {
+    const arr: Array<string> = []
+    fors<string>(['1', '2', '3'], (item: string) => {
+      arr.push(item)
+    })
+    expect(arr.length).toBe(3);
   });
 })
 

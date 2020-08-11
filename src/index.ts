@@ -1,7 +1,8 @@
 export {
   moneyGap,
   once,
-  numberOmit
+  numberOmit,
+  fors
 } from './core/base';
 
 export { 

@@ -7,7 +7,8 @@ import {
   MoneyGapType,
   OnceType,
   numberOmitType,
-  fileToBase64Type
+  fileToBase64Type,
+  Fors
 } from '../type'
 
 /**
@@ -48,7 +49,32 @@ export const fileToBase64: fileToBase64Type = (file: File): string => {
   let fileReader: FileReader = new FileReader();
   fileReader.readAsDataURL(file);
   fileReader.onload = (e: ProgressEvent<FileReader>) => {
-    return e.target?.result as string
+    return e.target?.result as string;
   }
-  return ''
+  return '';
+}
+
+/**
+ * 对象和数组循环
+ * @param res 传入结果
+ * @param callback 处理函数
+ */
+export const fors: Fors = <T>(res: Array<T> | Object, callback): void => {
+  // 对数据进行不同的处理, Object & Array
+  if (Array.isArray(res)) {
+    for (let i = 0, len = res.length; i < len; i ++) {
+      const isSkip: boolean = callback(res[i], i) || false;
+      if (isSkip) break;
+    }
+  }
+  if (res instanceof Object && !Array.isArray(res)) {
+    for (const key in res) {
+      const isSkip: boolean = callback(res[key], key);
+      if (isSkip) break;
+    }
+  }
+}
+
+export const toJSON = (res: Object) => {
+  
 }
